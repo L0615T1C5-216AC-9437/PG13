@@ -89,7 +89,7 @@ public class Main extends Plugin {
                 File file = new File("config\\mods\\settings.json");
                 FileWriter out = new FileWriter(file, false);
                 PrintWriter pw = new PrintWriter(out);
-                pw.println(adata.toString());
+                pw.println(adata.toString(4));
                 out.close();
             } catch (IOException i) {
                 i.printStackTrace();
